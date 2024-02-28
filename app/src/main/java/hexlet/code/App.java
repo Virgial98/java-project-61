@@ -10,11 +10,12 @@ class App {
                 "3 - Calc \n" +
                 "4 - GCD \n" +
                 "5 - Progression\n" +
+                "6 - Prime\n" +
                 "0 - Exit");
         System.out.println("Your choice: ");
         String sChoice = Engine.reader.readLine();
         int nChoice = Integer.parseInt(sChoice);
-        if(nChoice == 0 || (nChoice <= 0 && nChoice > 5)) {
+        if(nChoice == 0 || (nChoice <= 0 && nChoice > 6)) {
             return;
         }
         switch (nChoice) {
@@ -32,6 +33,10 @@ class App {
                 break;
             case 5:
                 Progression.startGame();
+                break;
+            case 6:
+                Prime.startGame();
+                break;
         }
 
     }
