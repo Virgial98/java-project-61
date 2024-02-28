@@ -9,11 +9,12 @@ class App {
                 "2 - Even \n" +
                 "3 - Calc \n" +
                 "4 - GCD \n" +
+                "5 - Progression\n" +
                 "0 - Exit");
         System.out.println("Your choice: ");
         String sChoice = Engine.reader.readLine();
         int nChoice = Integer.parseInt(sChoice);
-        if(nChoice == 0 || (nChoice <= 0 && nChoice > 4)) {
+        if(nChoice == 0 || (nChoice <= 0 && nChoice > 5)) {
             return;
         }
         switch (nChoice) {
@@ -29,6 +30,9 @@ class App {
             case 4:
                 GCD.startGame();
                 break;
+            case 5:
+                Progression.startGame();
         }
+
     }
 }

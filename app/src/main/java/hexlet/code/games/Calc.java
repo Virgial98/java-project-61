@@ -5,6 +5,7 @@ import hexlet.code.Engine;
 public class Calc {
     private static String correctAnswer;
     private static String question;
+
     public static void startGame() throws Exception {
         String rule = "What is the result of the expression?";
         String[][] tasks = new String [3][2];
