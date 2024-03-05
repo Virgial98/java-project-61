@@ -18,8 +18,8 @@ public class GCD {
     }
 
     private static void expression() {
-        int firstTerm = (int) (Math.random() * 100);
-        int secondTerm = (int) (Math.random() * 100);
+        int firstTerm = (int) ((Math.random() * 100) + 1);
+        int secondTerm = (int) ((Math.random() * 100) + 1);
         question = firstTerm + " " + secondTerm;
         if (firstTerm < secondTerm) {
             swapValues(firstTerm, secondTerm);

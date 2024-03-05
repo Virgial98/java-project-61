@@ -22,8 +22,8 @@ public class Calc {
         int secondTerm = (int) (Math.random() * 100);
         int result = 0;
         char[] operand = {'+', '-', '*'};
-        int i = (int) (Math.random() * 3) ;
-        switch (operand[i]) {
+        int operandRandom = (int) (Math.random() * 3) ;
+        switch (operand[operandRandom]) {
             case '+':
                 result = firstTerm + secondTerm;
                 question = firstTerm + " + " + secondTerm;
