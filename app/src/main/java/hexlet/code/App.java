@@ -13,7 +13,7 @@ class App {
                 "6 - Prime\n" +
                 "0 - Exit");
         System.out.println("Your choice: ");
-        String sChoice = Engine.reader.readLine();
+        String sChoice = Engine.READER.readLine();
         int nChoice = Integer.parseInt(sChoice);
         if(nChoice == 0 || (nChoice <= 0 && nChoice > 6)) {
             return;

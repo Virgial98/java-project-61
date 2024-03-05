@@ -4,20 +4,20 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 public class Engine {
-    public static final BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    public static final BufferedReader READER = new BufferedReader(new InputStreamReader(System.in));
 
     public static void letsPlay(String rule,String[][] tasks) throws Exception {
         int taskNumber = 0;
         String answer;
         System.out.println("Welcome to the Brain Games!");
         System.out.println("May I have your name?");
-        String name = reader.readLine();
+        String name = READER.readLine();
         System.out.println("Hello, " + name + "!");
         System.out.println(rule);
         do {
             System.out.println("Question: " + tasks[taskNumber][0] + "\n" +
                     "Your answer: ");
-            answer = reader.readLine();
+            answer = READER.readLine();
             if (tasks[taskNumber][1].equals(answer)) {
                 System.out.println("Correct!");
                 taskNumber++;
