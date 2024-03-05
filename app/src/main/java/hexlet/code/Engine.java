@@ -12,7 +12,7 @@ public class Engine {
         System.out.println("Welcome to the Brain Games!");
         System.out.println("May I have your name?");
         String name = reader.readLine();
-        System.out.println("Hello, " + name + " !");
+        System.out.println("Hello, " + name + "!");
         System.out.println(rule);
         do {
             System.out.println("Question: " + tasks[taskNumber][0] + "\n" +

@@ -1,4 +1,4 @@
-.DEFAULT_GOAL := run-dist
+.DEFAULT_GOAL := run
 
 setup:
 	./gradlew wrapper --gradle-version 8.5
