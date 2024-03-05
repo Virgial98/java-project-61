@@ -8,13 +8,13 @@ public class Progression {
 
     public static void startGame() throws Exception {
         String rule = "What number is missing in the progression?";
-        String[][] tasks = new String [3][2];
-        for (int i = 0; i < 3; i++) {
+        String[][] tasks = new String[Engine.VICTORY_COUNT][2];
+        for (int i = 0; i < tasks.length; i++) {
             expression();
             tasks[i][0] = question;
             tasks[i][1] = correctAnswer;
         }
-        Engine.letsPlay(rule,tasks);
+        Engine.letsPlay(rule, tasks);
     }
 
     private static void expression() {

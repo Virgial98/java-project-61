@@ -8,18 +8,19 @@ public class Calc {
 
     public static void startGame() throws Exception {
         String rule = "What is the result of the expression?";
-        String[][] tasks = new String [3][2];
-        for (int i = 0; i < 3; i++) {
+        String[][] tasks = new String[Engine.VICTORY_COUNT][2];
+        for (int i = 0; i < tasks.length; i++) {
             expression();
             tasks[i][0] = question;
             tasks[i][1] = correctAnswer;
         }
-        Engine.letsPlay(rule,tasks);
+        Engine.letsPlay(rule, tasks);
     }
 
     private static void expression() {
-        int firstTerm = (int) (Math.random() * 100);
-        int secondTerm = (int) (Math.random() * 100);
+        int rangeOfRandom = 100;
+        int firstTerm = (int) (Math.random() * rangeOfRandom);
+        int secondTerm = (int) (Math.random() * rangeOfRandom);
         int result = 0;
         char[] operand = {'+', '-', '*'};
         int operandRandom = (int) (Math.random() * 3) ;

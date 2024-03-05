@@ -8,18 +8,19 @@ public class GCD {
 
     public static void startGame() throws Exception {
         String rule = "Find the greatest common divisor of given numbers.";
-        String[][] tasks = new String[3][2];
-        for (int i = 0; i < 3; i++) {
+        String[][] tasks = new String[Engine.VICTORY_COUNT][2];
+        for (int i = 0; i < tasks.length; i++) {
             expression();
             tasks[i][0] = question;
             tasks[i][1] = correctAnswer;
         }
-        Engine.letsPlay(rule,tasks);
+        Engine.letsPlay(rule, tasks);
     }
 
     private static void expression() {
-        int firstTerm = (int) ((Math.random() * 100) + 1);
-        int secondTerm = (int) ((Math.random() * 100) + 1);
+        int rangeOfRandom = 100;
+        int firstTerm = (int) ((Math.random() * rangeOfRandom) + 1);
+        int secondTerm = (int) ((Math.random() * rangeOfRandom) + 1);
         question = firstTerm + " " + secondTerm;
         if (firstTerm < secondTerm) {
             swapValues(firstTerm, secondTerm);

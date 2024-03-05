@@ -8,17 +8,18 @@ public class Prime {
 
     public static void startGame() throws Exception {
         String rule = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
-        String[][] tasks = new String [3][2];
-        for (int i = 0; i < 3; i++) {
+        String[][] tasks = new String[Engine.VICTORY_COUNT][2];
+        for (int i = 0; i < tasks.length; i++) {
             expression();
             tasks[i][0] = question;
             tasks[i][1] = correctAnswer;
         }
-        Engine.letsPlay(rule,tasks);
+        Engine.letsPlay(rule, tasks);
     }
 
     private static void expression() {
-        int randomNumber = (int) (Math.random() * 10000) + 1;
+        int rangeOfRandom = 10000;
+        int randomNumber = (int) (Math.random() * rangeOfRandom) + 1;
         question = "" + randomNumber;
         if (isPrime(randomNumber)) {
             correctAnswer = "yes";
