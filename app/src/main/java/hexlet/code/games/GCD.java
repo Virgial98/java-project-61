@@ -18,7 +18,7 @@ public class GCD {
     }
 
     private static void expression() {
-        int rangeOfRandom = 100;
+        final int rangeOfRandom = 100;
         int firstTerm = (int) ((Math.random() * rangeOfRandom) + 1);
         int secondTerm = (int) ((Math.random() * rangeOfRandom) + 1);
         question = firstTerm + " " + secondTerm;

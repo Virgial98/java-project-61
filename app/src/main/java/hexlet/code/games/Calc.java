@@ -18,12 +18,13 @@ public class Calc {
     }
 
     private static void expression() {
-        int rangeOfRandom = 100;
+        final int rangeOfRandom = 100;
+        final int operandRandomRange = 3;
         int firstTerm = (int) (Math.random() * rangeOfRandom);
         int secondTerm = (int) (Math.random() * rangeOfRandom);
         int result = 0;
         char[] operand = {'+', '-', '*'};
-        int operandRandom = (int) (Math.random() * 3);
+        int operandRandom = (int) (Math.random() * operandRandomRange);
         switch (operand[operandRandom]) {
             case '+':
                 result = firstTerm + secondTerm;

@@ -18,7 +18,7 @@ public class Even {
     }
 
     private static void expression() {
-        int rangeOfRandom = 100;
+        final int rangeOfRandom = 100;
         int randomNumber = (int) (Math.random() * rangeOfRandom);
         question = randomNumber + "";
         if (randomNumber % 2 == 0) {

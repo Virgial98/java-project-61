@@ -9,7 +9,7 @@
 [![asciicast](https://asciinema.org/a/645383.svg)](https://asciinema.org/a/645383)
 ### GCD: 
 [![asciicast](https://asciinema.org/a/645390.svg)](https://asciinema.org/a/645390)
-### Prpgression:
+### Progression:
 [![asciicast](https://asciinema.org/a/645384.svg)](https://asciinema.org/a/645384)
 ### Prime:
 [![asciicast](https://asciinema.org/a/645387.svg)](https://asciinema.org/a/645387)

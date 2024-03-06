@@ -18,7 +18,7 @@ public class Prime {
     }
 
     private static void expression() {
-        int rangeOfRandom = 10000;
+        final int rangeOfRandom = 10000;
         int randomNumber = (int) (Math.random() * rangeOfRandom) + 1;
         question = "" + randomNumber;
         if (isPrime(randomNumber)) {

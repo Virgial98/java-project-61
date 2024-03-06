@@ -18,7 +18,7 @@ public class Progression {
     }
 
     private static void expression() {
-        int[] randomRanges = {5, 10, 100};
+        final int[] randomRanges = {5, 10, 100};
         int progrLength = (int) (Math.random() * randomRanges[0]) + randomRanges[0];
         int questionNumber = (int) (Math.random() * (progrLength - 1)) + 1;
         int progrStep = (int) (Math.random() * randomRanges[1]) + 1;

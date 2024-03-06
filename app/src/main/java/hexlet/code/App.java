@@ -19,31 +19,27 @@ class App {
                 0 - Exit""");
         System.out.println("Your choice: ");
         String sChoice = Engine.READER.readLine();
-        int nChoice = Integer.parseInt(sChoice);
-        if (nChoice == 0 || (nChoice <= 0 && nChoice > 6)) {
-            return;
-        }
-        switch (nChoice) {
-            case 1:
+        switch (sChoice) {
+            case "1":
                 Cli.greetingByName();
                 break;
-            case 2:
+            case "2":
                 Even.startGame();
                 break;
-            case 3:
+            case "3":
                 Calc.startGame();
                 break;
-            case 4:
+            case "4":
                 GCD.startGame();
                 break;
-            case 5:
+            case "5":
                 Progression.startGame();
                 break;
-            case 6:
+            case "6":
                 Prime.startGame();
                 break;
             default:
-                break;
+                return;
         }
 
     }
