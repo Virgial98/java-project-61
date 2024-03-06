@@ -16,24 +16,21 @@ public class Engine {
         System.out.println("Hello, " + name + "!");
         System.out.println(rule);
         do {
-            System.out.println("Question: " + tasks[taskNumber][0] + "\n" 
-            + "Your answer: ");
+            System.out.println("Question: " + tasks[taskNumber][0] + "\n" + "Your answer: ");
             answer = READER.readLine();
             if (tasks[taskNumber][1].equals(answer)) {
                 System.out.println("Correct!");
                 taskNumber++;
-                }
-            else {
+            } else {
                 System.out.println("'" + answer + "' is wrong answer ;(. Correct answer was '"
-                + tasks[taskNumber][1] + "'.");
+                        + tasks[taskNumber][1] + "'.");
                 break;
-                }
+            }
         } while (taskNumber != VICTORY_COUNT);
         if (taskNumber == VICTORY_COUNT) {
             System.out.println("Congratulations, " + name + "!");
-            }
-        else {
+        } else {
             System.out.println("Let's try again, " + name + "!");
-            }
+        }
     }
 }

@@ -26,7 +26,7 @@ public class Progression {
         question = "" + progression[0];
         for (int i = 1; i < progression.length; i++) {
             progression[i] = progression[i - 1] + progrStep;
-            if(i == questionNumber) {
+            if (i == questionNumber) {
                 question = question + " ..";
                 correctAnswer = "" + progression[i];
                 continue;

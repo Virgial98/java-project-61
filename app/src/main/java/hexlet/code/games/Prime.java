@@ -23,8 +23,7 @@ public class Prime {
         question = "" + randomNumber;
         if (isPrime(randomNumber)) {
             correctAnswer = "yes";
-        }
-        else {
+        } else {
             correctAnswer = "no";
         }
     }

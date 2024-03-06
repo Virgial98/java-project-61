@@ -6,7 +6,7 @@ public class Even {
     private static String correctAnswer;
     private static String question;
 
-    public static void startGame() throws Exception{
+    public static void startGame() throws Exception {
         String rule = "Answer 'yes' if the number is even, otherwise answer 'no'.";
         String[][] tasks = new String[Engine.VICTORY_COUNT][2];
         for (int i = 0; i < tasks.length; i++) {

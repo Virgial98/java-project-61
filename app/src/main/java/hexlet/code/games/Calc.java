@@ -23,7 +23,7 @@ public class Calc {
         int secondTerm = (int) (Math.random() * rangeOfRandom);
         int result = 0;
         char[] operand = {'+', '-', '*'};
-        int operandRandom = (int) (Math.random() * 3) ;
+        int operandRandom = (int) (Math.random() * 3);
         switch (operand[operandRandom]) {
             case '+':
                 result = firstTerm + secondTerm;

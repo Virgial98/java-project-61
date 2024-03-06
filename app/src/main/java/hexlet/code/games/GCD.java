@@ -32,7 +32,7 @@ public class GCD {
             remain = firstTerm % secondTerm;
             firstTerm = secondTerm;
             secondTerm = remain;
-        }while (remain != 0);
+        } while (remain != 0);
         correctAnswer = result + "";
     }
 
