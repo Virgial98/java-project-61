@@ -1,17 +1,22 @@
 package hexlet.code;
 
-import hexlet.code.games.*;
+import hexlet.code.games.Calc;
+import hexlet.code.games.Even;
+import hexlet.code.games.GCD;
+import hexlet.code.games.Prime;
+import hexlet.code.games.Progression;
 
 class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Please enter the game number and press Enter.\n"
-                + "1 - Greet \n"
-                + "2 - Even \n"
-                + "3 - Calc \n"
-                + "4 - GCD \n"
-                + "5 - Progression\n"
-                + "6 - Prime\n"
-                + "0 - Exit");
+        System.out.println("""
+                Please enter the game number and press Enter.
+                1 - Greet\s
+                2 - Even\s
+                3 - Calc\s
+                4 - GCD\s
+                5 - Progression
+                6 - Prime
+                0 - Exit""");
         System.out.println("Your choice: ");
         String sChoice = Engine.READER.readLine();
         int nChoice = Integer.parseInt(sChoice);
