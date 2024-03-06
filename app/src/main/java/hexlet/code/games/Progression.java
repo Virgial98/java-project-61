@@ -18,11 +18,12 @@ public class Progression {
     }
 
     private static void expression() {
-        int progrLength = (int) (Math.random() * 5) + 5;
+        int[] randomRanges = {5, 10, 100};
+        int progrLength = (int) (Math.random() * randomRanges[0]) + randomRanges[0];
         int questionNumber = (int) (Math.random() * (progrLength - 1)) + 1;
-        int progrStep = (int) (Math.random() * 10) + 1;
+        int progrStep = (int) (Math.random() * randomRanges[1]) + 1;
         int[] progression = new int[progrLength];
-        progression[0] = (int) (Math.random() * 100);
+        progression[0] = (int) (Math.random() * randomRanges[2]);
         question = "" + progression[0];
         for (int i = 1; i < progression.length; i++) {
             progression[i] = progression[i - 1] + progrStep;

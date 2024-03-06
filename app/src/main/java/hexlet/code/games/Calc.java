@@ -37,6 +37,8 @@ public class Calc {
                 result = firstTerm * secondTerm;
                 question = firstTerm + " * " + secondTerm;
                 break;
+            default:
+                break;
         }
         correctAnswer = result + "";
     }
